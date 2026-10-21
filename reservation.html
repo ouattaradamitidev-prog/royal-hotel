@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Réservez votre séjour dans un hôtel Royal Hôtel en Côte d'Ivoire. Devis instantané en FCFA, annulation gratuite jusqu'à 48 heures avant l'arrivée."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Réserver un séjour | Royal Hôtel</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+      <div class="nav__wrapper">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">Royal Hôtel<span>Côte d'Ivoire</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="hotels.html">Nos hôtels</a></li>
+          <li><a href="chambres.html">Chambres</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta__mobile">
+            <a href="reservation.html" class="btn btn--sm btn--block"
+              >Réserver un séjour</a
+            >
+          </li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:+2252722441890" class="nav__phone"
+            ><i class="ri-phone-line"></i> +225 27 22 44 18 90</a
+          >
+          <a href="reservation.html" class="btn btn--sm">Réserver</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNIÈRE -->
+    <section class="page__banner">
+      <div class="section__container page__banner__container">
+        <h1>Réserver un séjour</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span class="current">Réservation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TUNNEL -->
+    <section class="section__container">
+      <ul class="steps__progress">
+        <li class="active"><b>1</b> Votre séjour</li>
+        <li class="active"><b>2</b> Vos informations</li>
+        <li><b>3</b> Confirmation</li>
+      </ul>
+
+      <div class="hotel__detail" id="devis-reservation" data-prix="85000">
+        <!-- FORMULAIRE -->
+        <div>
+          <form data-validate="reservation">
+            <div class="form__success">
+              <strong>Demande enregistrée.</strong> Un conseiller Royal Hôtel
+              vous confirme la disponibilité par e-mail et par WhatsApp sous deux
+              heures ouvrées. Aucun montant n'a été prélevé.
+            </div>
+
+            <h3
+              style="
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+                font-family: var(--title-font);
+                color: var(--text-dark);
+              "
+            >
+              1. Votre séjour
+            </h3>
+
+            <div class="form__grid form__grid--2">
+              <div class="form__group" style="grid-column: 1 / -1">
+                <label for="r-hotel">Établissement *</label>
+                <select id="r-hotel" required>
+                  <option value="">Choisissez une adresse…</option>
+                  <option>Royal Palace Plateau — Abidjan</option>
+                  <option>Royal Lagune Cocody — Abidjan</option>
+                  <option>Royal Assinie Beach Resort — Assinie-Mafia</option>
+                  <option>Royal Bassam Héritage — Grand-Bassam</option>
+                  <option>Royal Yamoussoukro Business — Yamoussoukro</option>
+                  <option>Royal San-Pédro Océan — San-Pédro</option>
+                </select>
+                <small>Merci de choisir un établissement.</small>
+              </div>
+
+              <div class="form__group">
+                <label for="r-arrivee">Date d'arrivée *</label>
+                <input type="date" id="r-arrivee" data-arrivee required />
+                <small>Merci d'indiquer votre date d'arrivée.</small>
+              </div>
+              <div class="form__group">
+                <label for="r-depart">Date de départ *</label>
+                <input type="date" id="r-depart" data-depart required />
+                <small>Merci d'indiquer votre date de départ.</small>
+              </div>
+
+              <div class="form__group" style="grid-column: 1 / -1">
+                <label for="r-categorie">Catégorie d'hébergement *</label>
+                <select id="r-categorie" data-choix-chambre required>
+                  <option value="classique" data-prix="85000" data-nom="Chambre Classique Lagune">
+                    Chambre Classique Lagune — 85 000 FCFA / nuit
+                  </option>
+                  <option value="superieure" data-prix="120000" data-nom="Chambre Supérieure Vue Mer">
+                    Chambre Supérieure Vue Mer — 120 000 FCFA / nuit
+                  </option>
+                  <option value="junior" data-prix="165000" data-nom="Suite Junior Akwaba">
+                    Suite Junior Akwaba — 165 000 FCFA / nuit
+                  </option>
+                  <option value="executive" data-prix="210000" data-nom="Suite Exécutive Ébène">
+                    Suite Exécutive Ébène — 210 000 FCFA / nuit
+                  </option>
+                  <option value="villa" data-prix="340000" data-nom="Villa Privée Assinie">
+                    Villa Privée Assinie — 340 000 FCFA / nuit
+                  </option>
+                  <option value="presidentielle" data-prix="520000" data-nom="Suite Présidentielle Royal">
+                    Suite Présidentielle Royal — 520 000 FCFA / nuit
+                  </option>
+                </select>
+                <small>Merci de choisir une catégorie.</small>
+              </div>
+
+              <div class="form__group">
+                <label for="r-voyageurs">Voyageurs</label>
+                <select id="r-voyageurs" data-voyageurs>
+                  <option value="1">1 voyageur</option>
+                  <option value="2" selected>2 voyageurs</option>
+                  <option value="3">3 voyageurs</option>
+                  <option value="4">4 voyageurs</option>
+                  <option value="5">5 voyageurs</option>
+                  <option value="6">6 voyageurs et plus</option>
+                </select>
+                <small></small>
+              </div>
+              <div class="form__group">
+                <label for="r-chambres">Nombre de chambres</label>
+                <select id="r-chambres" data-chambres>
+                  <option value="1" selected>1 chambre</option>
+                  <option value="2">2 chambres</option>
+                  <option value="3">3 chambres</option>
+                  <option value="4">4 chambres</option>
+                </select>
+                <small></small>
+              </div>
+            </div>
+
+            <h3
+              style="
+                margin-block: 2.5rem 1.5rem;
+                font-size: 1.5rem;
+                font-family: var(--title-font);
+                color: var(--text-dark);
+              "
+            >
+              2. Vos informations
+            </h3>
+
+            <div class="form__grid form__grid--2">
+              <div class="form__group">
+                <label for="r-prenom">Prénom *</label>
+                <input type="text" id="r-prenom" placeholder="Aya" required />
+                <small>Merci d'indiquer votre prénom.</small>
+              </div>
+              <div class="form__group">
+                <label for="r-nom">Nom *</label>
+                <input type="text" id="r-nom" placeholder="Koffi" required />
+                <small>Merci d'indiquer votre nom.</small>
+              </div>
+              <div class="form__group">
+                <label for="r-email">Adresse e-mail *</label>
+                <input
+                  type="email"
+                  id="r-email"
+                  placeholder="vous@exemple.ci"
+                  required
+                />
+                <small>Adresse e-mail invalide.</small>
+              </div>
+              <div class="form__group">
+                <label for="r-tel">Téléphone / WhatsApp *</label>
+                <input
+                  type="tel"
+                  id="r-tel"
+                  placeholder="+225 07 00 00 00 00"
+                  required
+                />
+                <small>Numéro de téléphone invalide.</small>
+              </div>
+              <div class="form__group">
+                <label for="r-pays">Pays de résidence</label>
+                <select id="r-pays">
+                  <option selected>Côte d'Ivoire</option>
+                  <option>Burkina Faso</option>
+                  <option>Mali</option>
+                  <option>Sénégal</option>
+                  <option>Ghana</option>
+                  <option>France</option>
+                  <option>Autre pays</option>
+                </select>
+                <small></small>
+              </div>
+              <div class="form__group">
+                <label for="r-paiement">Mode de règlement souhaité</label>
+                <select id="r-paiement">
+                  <option>À l'arrivée (espèces ou carte)</option>
+                  <option>Mobile money (Wave, Orange, MTN)</option>
+                  <option>Virement bancaire</option>
+                  <option>Facturation entreprise</option>
+                </select>
+                <small></small>
+              </div>
+              <div class="form__group" style="grid-column: 1 / -1">
+                <label for="r-message">Demandes particulières</label>
+                <textarea
+                  id="r-message"
+                  placeholder="Étage élevé, lit bébé, transfert aéroport, régime alimentaire…"
+                ></textarea>
+                <small></small>
+              </div>
+              <div class="form__group" style="grid-column: 1 / -1">
+                <label class="form__check">
+                  <input type="checkbox" />
+                  <span
+                    >Je souhaite recevoir les offres du Royal Club par e-mail.</span
+                  >
+                </label>
+                <label class="form__check" style="margin-top: 0.5rem">
+                  <input type="checkbox" />
+                  <span
+                    >J'ai lu et j'accepte les conditions générales de vente et la
+                    politique de confidentialité.</span
+                  >
+                </label>
+              </div>
+              <div class="form__group" style="grid-column: 1 / -1">
+                <button class="btn" type="submit">
+                  <i class="ri-check-double-line"></i> Envoyer ma demande de
+                  réservation
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- RÉCAPITULATIF -->
+        <aside class="booking__card">
+          <h4>Récapitulatif</h4>
+          <p class="booking__from" id="reservation-hotel">
+            Séjour Royal Hôtel Côte d'Ivoire
+          </p>
+
+          <div class="summary__row">
+            <span>Dates</span><span data-sortie-dates>—</span>
+          </div>
+          <div class="summary__row">
+            <span>Catégorie</span><span data-sortie-chambre>—</span>
+          </div>
+          <div class="summary__row">
+            <span>Séjour</span><span data-sortie-nuits>—</span>
+          </div>
+          <div class="summary__row">
+            <span>Hébergement</span><span data-sortie-soustotal>—</span>
+          </div>
+          <div class="summary__row">
+            <span>Taxe de séjour</span><span data-sortie-taxe>—</span>
+          </div>
+          <div class="summary__row">
+            <span>Frais de service (5 %)</span><span data-sortie-service>—</span>
+          </div>
+          <div class="summary__row total">
+            <span>Total estimé</span><span data-sortie-total>—</span>
+          </div>
+
+          <ul class="service__list" style="margin-bottom: 0">
+            <li><i class="ri-check-line"></i> Petit-déjeuner buffet inclus</li>
+            <li><i class="ri-check-line"></i> Wi-Fi fibre illimité</li>
+            <li><i class="ri-check-line"></i> Annulation gratuite sous 48 h</li>
+            <li><i class="ri-check-line"></i> Aucun prélèvement aujourd'hui</li>
+          </ul>
+
+          <p class="booking__note">
+            Démonstration : le paiement en ligne n'est pas connecté. Votre
+            demande est simplement transmise à notre équipe.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- RÉASSURANCE -->
+    <section class="section__container" style="padding-top: 0">
+      <div class="contact__grid" style="margin-bottom: 0">
+        <div class="contact__card">
+          <span><i class="ri-price-tag-3-line"></i></span>
+          <h4>Meilleur tarif garanti</h4>
+          <p>
+            Vous trouvez moins cher ailleurs pour le même séjour ? Nous alignons
+            notre prix et vous offrons 10 % de remise supplémentaire.
+          </p>
+        </div>
+        <div class="contact__card">
+          <span><i class="ri-calendar-check-line"></i></span>
+          <h4>Annulation flexible</h4>
+          <p>
+            Gratuite jusqu'à 48 heures avant l'arrivée sur l'ensemble de nos
+            tarifs flexibles, sans justificatif.
+          </p>
+        </div>
+        <div class="contact__card">
+          <span><i class="ri-customer-service-2-line"></i></span>
+          <h4>Une équipe joignable</h4>
+          <p>
+            Par téléphone, WhatsApp ou e-mail, sept jours sur sept, de 7h à 22h
+            (heure d'Abidjan, GMT).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo"
+            >Royal Hôtel<span>Côte d'Ivoire</span></a
+          >
+          <p>
+            Groupe hôtelier ivoirien fondé en 2011. Six établissements à Abidjan,
+            Assinie, Grand-Bassam, Yamoussoukro et San-Pédro, réunis autour d'une
+            même idée : recevoir comme on reçoit chez soi.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Découvrir</h4>
+          <ul class="footer__links">
+            <li><a href="hotels.html">Nos hôtels</a></li>
+            <li><a href="chambres.html">Chambres & suites</a></li>
+            <li><a href="services.html">Services & expériences</a></li>
+            <li><a href="blog.html">Le journal</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="a-propos.html">À propos du groupe</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Recrutement</a></li>
+            <li><a href="contact.html">Conditions générales</a></li>
+            <li><a href="contact.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nous joindre</h4>
+          <ul class="footer__contact">
+            <li>
+              <i class="ri-map-pin-line"></i>
+              <span>Boulevard Lagunaire, Cocody<br />Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li><i class="ri-phone-line"></i><span>+225 27 22 44 18 90</span></li>
+            <li><i class="ri-whatsapp-line"></i><span>+225 07 07 12 34 56</span></li>
+            <li><i class="ri-mail-line"></i><span>reservation@royalhotel.ci</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <p>© 2026 Royal Hôtel Côte d'Ivoire. Tous droits réservés.</p>
+        <p>
+          Conception & développement :
+          <a href="https://damiti-ouattara.vercel.app/" target="_blank" rel="noopener"
+            >Damiti Ouattara</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll__top" id="scroll-top" aria-label="Haut de page"
+      ><i class="ri-arrow-up-line"></i
+    ></a>
+    <a
+      href="https://wa.me/2250707123456"
+      class="whatsapp__btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Nous écrire sur WhatsApp"
+      ><i class="ri-whatsapp-line"></i
+    ></a>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

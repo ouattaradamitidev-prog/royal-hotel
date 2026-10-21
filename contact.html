@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contactez Royal Hôtel Côte d'Ivoire : siège à Cocody Abidjan, réservations par téléphone, WhatsApp ou e-mail, formulaire de demande et questions fréquentes."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nous contacter | Royal Hôtel</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+      <div class="nav__wrapper">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">Royal Hôtel<span>Côte d'Ivoire</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="hotels.html">Nos hôtels</a></li>
+          <li><a href="chambres.html">Chambres</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta__mobile">
+            <a href="reservation.html" class="btn btn--sm btn--block"
+              >Réserver un séjour</a
+            >
+          </li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:+2252722441890" class="nav__phone"
+            ><i class="ri-phone-line"></i> +225 27 22 44 18 90</a
+          >
+          <a href="reservation.html" class="btn btn--sm">Réserver</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNIÈRE -->
+    <section class="page__banner">
+      <div class="section__container page__banner__container">
+        <h1>Nous contacter</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span class="current">Contact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- COORDONNÉES -->
+    <section class="section__container">
+      <span class="section__tag">Parlons-en</span>
+      <h2 class="section__header">Trois façons de nous joindre</h2>
+      <p
+        class="section__description section__subtitle"
+        style="margin-bottom: 3rem"
+      >
+        Réservation, événement d'entreprise, candidature ou simple question :
+        notre équipe répond sous vingt-quatre heures ouvrées.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__card">
+          <span><i class="ri-map-pin-line"></i></span>
+          <h4>Siège du groupe</h4>
+          <p>
+            Boulevard Lagunaire, Cocody<br />
+            Abidjan, Côte d'Ivoire<br /><br />
+            Ouvert du lundi au vendredi<br />de 8h à 18h
+          </p>
+        </div>
+        <div class="contact__card">
+          <span><i class="ri-phone-line"></i></span>
+          <h4>Par téléphone</h4>
+          <p>
+            Réservations : +225 27 22 44 18 90<br />
+            Entreprises : +225 27 22 44 18 95<br />
+            WhatsApp : +225 07 07 12 34 56<br /><br />
+            7 jours sur 7, de 7h à 22h (GMT)
+          </p>
+        </div>
+        <div class="contact__card">
+          <span><i class="ri-mail-line"></i></span>
+          <h4>Par e-mail</h4>
+          <p>
+            reservation@royalhotel.ci<br />
+            seminaires@royalhotel.ci<br />
+            recrutement@royalhotel.ci<br /><br />
+            Réponse sous 24 h ouvrées
+          </p>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE + INFOS -->
+      <div class="contact__layout" style="margin-top: 4rem">
+        <div>
+          <span class="section__tag" style="text-align: left">Formulaire</span>
+          <h2 class="section__header" style="text-align: left">
+            Écrivez-nous directement
+          </h2>
+          <p
+            class="section__description"
+            style="text-align: left; margin-bottom: 2rem"
+          >
+            Plus votre demande est précise — dates, nombre de personnes, ville —
+            plus notre réponse sera utile du premier coup.
+          </p>
+
+          <form data-validate>
+            <div class="form__success">
+              Merci ! Votre message est parti. Un membre de l'équipe Royal Hôtel
+              vous répond sous vingt-quatre heures ouvrées.
+            </div>
+
+            <div class="form__grid form__grid--2">
+              <div class="form__group">
+                <label for="c-prenom">Prénom *</label>
+                <input type="text" id="c-prenom" placeholder="Aya" required />
+                <small>Merci d'indiquer votre prénom.</small>
+              </div>
+              <div class="form__group">
+                <label for="c-nom">Nom *</label>
+                <input type="text" id="c-nom" placeholder="Koffi" required />
+                <small>Merci d'indiquer votre nom.</small>
+              </div>
+              <div class="form__group">
+                <label for="c-email">Adresse e-mail *</label>
+                <input
+                  type="email"
+                  id="c-email"
+                  placeholder="vous@exemple.ci"
+                  required
+                />
+                <small>Adresse e-mail invalide.</small>
+              </div>
+              <div class="form__group">
+                <label for="c-tel">Téléphone / WhatsApp</label>
+                <input type="tel" id="c-tel" placeholder="+225 07 00 00 00 00" />
+                <small></small>
+              </div>
+              <div class="form__group">
+                <label for="c-sujet">Objet de votre demande *</label>
+                <select id="c-sujet" required>
+                  <option value="">Choisissez…</option>
+                  <option>Réservation ou disponibilité</option>
+                  <option>Séminaire, congrès ou réception</option>
+                  <option>Mariage ou événement privé</option>
+                  <option>Modification / annulation de séjour</option>
+                  <option>Réclamation après séjour</option>
+                  <option>Candidature spontanée</option>
+                  <option>Partenariat ou presse</option>
+                </select>
+                <small>Merci de choisir un objet.</small>
+              </div>
+              <div class="form__group">
+                <label for="c-etablissement">Établissement concerné</label>
+                <select id="c-etablissement">
+                  <option value="">Peu importe / je ne sais pas encore</option>
+                  <option>Royal Palace Plateau — Abidjan</option>
+                  <option>Royal Lagune Cocody — Abidjan</option>
+                  <option>Royal Assinie Beach Resort — Assinie-Mafia</option>
+                  <option>Royal Bassam Héritage — Grand-Bassam</option>
+                  <option>Royal Yamoussoukro Business — Yamoussoukro</option>
+                  <option>Royal San-Pédro Océan — San-Pédro</option>
+                </select>
+                <small></small>
+              </div>
+              <div class="form__group" style="grid-column: 1 / -1">
+                <label for="c-message">Votre message *</label>
+                <textarea
+                  id="c-message"
+                  placeholder="Dites-nous vos dates, le nombre de personnes et vos éventuelles contraintes…"
+                  required
+                ></textarea>
+                <small>Merci d'écrire votre message.</small>
+              </div>
+              <div class="form__group" style="grid-column: 1 / -1">
+                <label class="form__check">
+                  <input type="checkbox" />
+                  <span
+                    >J'accepte que mes données soient utilisées pour traiter ma
+                    demande, conformément à la politique de confidentialité.</span
+                  >
+                </label>
+              </div>
+              <div class="form__group" style="grid-column: 1 / -1">
+                <button class="btn" type="submit">
+                  <i class="ri-send-plane-line"></i> Envoyer mon message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- COLONNE LATÉRALE -->
+        <aside class="sidebar">
+          <div class="sidebar__widget">
+            <h4>Horaires d'accueil</h4>
+            <ul class="contact__hours">
+              <li><span>Réception des hôtels</span><span>24h/24</span></li>
+              <li><span>Service réservations</span><span>7h – 22h</span></li>
+              <li><span>Service entreprises</span><span>8h – 18h</span></li>
+              <li><span>Siège (Cocody)</span><span>Lun. – Ven. 8h – 18h</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar__widget">
+            <h4>Réserver plus vite</h4>
+            <p
+              style="
+                margin-bottom: 1.25rem;
+                font-size: 0.95rem;
+                line-height: 1.6rem;
+                color: var(--text-light);
+              "
+            >
+              Pour un séjour ferme, le formulaire de réservation vous donne une
+              estimation immédiate en francs CFA.
+            </p>
+            <a href="reservation.html" class="btn btn--block btn--sm"
+              >Aller à la réservation</a
+            >
+          </div>
+
+          <div class="sidebar__widget">
+            <h4>Nous suivre</h4>
+            <div class="contact__socials">
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+              <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CARTE -->
+    <section class="section__container" style="padding-top: 0">
+      <div class="map">
+        <iframe
+          title="Localisation du siège Royal Hôtel à Cocody, Abidjan"
+          loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-4.0200%2C5.3300%2C-3.9700%2C5.3700&amp;layer=mapnik&amp;marker=5.3500%2C-3.9950"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section__container faq__container" style="padding-top: 0">
+      <div>
+        <span class="section__tag" style="text-align: left">Questions fréquentes</span>
+        <h2 class="section__header" style="text-align: left">
+          Avant de nous écrire
+        </h2>
+        <p class="section__description" style="text-align: left">
+          Les réponses aux demandes que nous recevons le plus souvent. Si la
+          vôtre n'y figure pas, le formulaire est juste au-dessus.
+        </p>
+      </div>
+      <div class="faq__accordion">
+        <div class="faq__item open">
+          <div class="faq__question">
+            <span>Quels moyens de paiement acceptez-vous ?</span>
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="faq__answer" style="max-height: 220px">
+            <p>
+              Espèces en francs CFA, cartes Visa et Mastercard, virement bancaire,
+              ainsi que les paiements mobiles Wave, Orange Money et MTN MoMo. Le
+              règlement se fait à l'arrivée, sauf tarif prépayé.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Puis-je modifier ou annuler ma réservation ?</span>
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Oui, sans frais jusqu'à 48 heures avant l'arrivée sur les tarifs
+              flexibles. Écrivez-nous à reservation@royalhotel.ci en précisant
+              votre numéro de dossier.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Proposez-vous des transferts depuis l'aéroport ?</span>
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Oui, depuis l'aéroport Félix-Houphouët-Boigny d'Abidjan comme depuis
+              celui de San-Pédro. Comptez 15 000 FCFA par trajet à Abidjan, à
+              réserver au moment de la confirmation.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Acceptez-vous les animaux de compagnie ?</span>
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Les petits animaux de moins de 8 kg sont acceptés dans nos
+              établissements d'Assinie et de Grand-Bassam, avec un supplément de
+              10 000 FCFA par nuit pour le nettoyage.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Comment postuler à une offre d'emploi ?</span>
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Envoyez CV et lettre à recrutement@royalhotel.ci en précisant le
+              poste et l'établissement souhaités. Nous accueillons également
+              cent vingt alternants par an.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo"
+            >Royal Hôtel<span>Côte d'Ivoire</span></a
+          >
+          <p>
+            Groupe hôtelier ivoirien fondé en 2011. Six établissements à Abidjan,
+            Assinie, Grand-Bassam, Yamoussoukro et San-Pédro, réunis autour d'une
+            même idée : recevoir comme on reçoit chez soi.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Découvrir</h4>
+          <ul class="footer__links">
+            <li><a href="hotels.html">Nos hôtels</a></li>
+            <li><a href="chambres.html">Chambres & suites</a></li>
+            <li><a href="services.html">Services & expériences</a></li>
+            <li><a href="blog.html">Le journal</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="a-propos.html">À propos du groupe</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Recrutement</a></li>
+            <li><a href="contact.html">Conditions générales</a></li>
+            <li><a href="contact.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nous joindre</h4>
+          <ul class="footer__contact">
+            <li>
+              <i class="ri-map-pin-line"></i>
+              <span>Boulevard Lagunaire, Cocody<br />Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li><i class="ri-phone-line"></i><span>+225 27 22 44 18 90</span></li>
+            <li><i class="ri-whatsapp-line"></i><span>+225 07 07 12 34 56</span></li>
+            <li><i class="ri-mail-line"></i><span>reservation@royalhotel.ci</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <p>© 2026 Royal Hôtel Côte d'Ivoire. Tous droits réservés.</p>
+        <p>
+          Conception & développement :
+          <a href="https://damiti-ouattara.vercel.app/" target="_blank" rel="noopener"
+            >Damiti Ouattara</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll__top" id="scroll-top" aria-label="Haut de page"
+      ><i class="ri-arrow-up-line"></i
+    ></a>
+    <a
+      href="https://wa.me/2250707123456"
+      class="whatsapp__btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Nous écrire sur WhatsApp"
+      ><i class="ri-whatsapp-line"></i
+    ></a>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

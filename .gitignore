@@ -1,0 +1,18 @@
+# Outils locaux
+.claude/
+
+# Systèmes d'exploitation
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Dépendances / build (au cas où)
+node_modules/
+dist/
+.vercel/

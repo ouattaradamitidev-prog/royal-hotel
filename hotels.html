@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Les six hôtels Royal Hôtel en Côte d'Ivoire : Abidjan, Assinie-Mafia, Grand-Bassam, Yamoussoukro et San-Pédro. Filtrez par ville, tarif et catégorie."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nos hôtels en Côte d'Ivoire | Royal Hôtel</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+      <div class="nav__wrapper">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">Royal Hôtel<span>Côte d'Ivoire</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="hotels.html">Nos hôtels</a></li>
+          <li><a href="chambres.html">Chambres</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta__mobile">
+            <a href="reservation.html" class="btn btn--sm btn--block"
+              >Réserver un séjour</a
+            >
+          </li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:+2252722441890" class="nav__phone"
+            ><i class="ri-phone-line"></i> +225 27 22 44 18 90</a
+          >
+          <a href="reservation.html" class="btn btn--sm">Réserver</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNIÈRE -->
+    <section class="page__banner">
+      <div class="section__container page__banner__container">
+        <h1>Nos hôtels</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span class="current">Nos hôtels</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTE -->
+    <section class="section__container">
+      <!-- FILTRES -->
+      <div class="filter__bar">
+        <div class="filter__grid">
+          <div class="filter__group">
+            <label for="filtre-ville">Ville</label>
+            <select id="filtre-ville">
+              <option value="">Toutes les villes</option>
+              <option value="Abidjan">Abidjan</option>
+              <option value="Assinie">Assinie-Mafia</option>
+              <option value="Grand-Bassam">Grand-Bassam</option>
+              <option value="Yamoussoukro">Yamoussoukro</option>
+              <option value="San-Pédro">San-Pédro</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label for="filtre-prix">Budget par nuit</label>
+            <select id="filtre-prix">
+              <option value="">Tous les tarifs</option>
+              <option value="100000">Jusqu'à 100 000 FCFA</option>
+              <option value="150000">Jusqu'à 150 000 FCFA</option>
+              <option value="200000">Jusqu'à 200 000 FCFA</option>
+              <option value="250000">Jusqu'à 250 000 FCFA</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label for="filtre-etoiles">Catégorie</label>
+            <select id="filtre-etoiles">
+              <option value="">Toutes catégories</option>
+              <option value="4">4 étoiles et plus</option>
+              <option value="5">5 étoiles</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label for="hotels-sort">Trier par</label>
+            <select id="hotels-sort">
+              <option value="">Recommandés</option>
+              <option value="note">Meilleures notes</option>
+              <option value="prix-asc">Prix croissant</option>
+              <option value="prix-desc">Prix décroissant</option>
+              <option value="nom">Nom (A → Z)</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label>&nbsp;</label>
+            <button class="btn btn--outline" type="button" id="hotels-reset">
+              Réinitialiser
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__result">
+        <p><strong id="hotels-count">6</strong> établissements disponibles</p>
+        <p>Meilleur tarif garanti en réservation directe</p>
+      </div>
+
+      <div class="hotel__grid" id="hotels-grid">
+        <!-- 1 -->
+        <article
+          class="hotel__card"
+          data-ville="Abidjan"
+          data-prix="185000"
+          data-etoiles="5"
+          data-note="9.4"
+          data-nom="Royal Palace Plateau"
+        >
+          <div class="hotel__image">
+            <div class="hotel__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <span class="hotel__badge">Emblématique</span>
+            <img src="assets/hotel-1.jpg" alt="Royal Palace Plateau" />
+          </div>
+          <p class="hotel__location">
+            <i class="ri-map-pin-line"></i> Le Plateau, Abidjan
+          </p>
+          <h4><a href="hotel.html">Royal Palace Plateau</a></h4>
+          <p class="hotel__price">185 000 FCFA<span> / nuit</span></p>
+          <div class="hotel__meta">
+            <span><i class="ri-star-smile-line"></i> 9,4 — 214 avis</span>
+            <span><i class="ri-restaurant-line"></i> 2 restaurants</span>
+            <span><i class="ri-briefcase-line"></i> Séminaires</span>
+          </div>
+          <div class="room__actions" style="margin-top: 1rem">
+            <a
+              href="reservation.html"
+              class="btn btn--sm"
+              data-reserver
+              data-hotel="Royal Palace Plateau"
+              data-prix="185000"
+              >Réserver</a
+            >
+            <a href="hotel.html" class="btn btn--outline btn--sm">Voir la fiche</a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article
+          class="hotel__card"
+          data-ville="Assinie"
+          data-prix="210000"
+          data-etoiles="5"
+          data-note="9.6"
+          data-nom="Royal Assinie Beach Resort"
+        >
+          <div class="hotel__image">
+            <div class="hotel__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <span class="hotel__badge">Bord de mer</span>
+            <img src="assets/hotel-2.jpg" alt="Royal Assinie Beach Resort" />
+          </div>
+          <p class="hotel__location">
+            <i class="ri-map-pin-line"></i> Assinie-Mafia
+          </p>
+          <h4><a href="hotel.html">Royal Assinie Beach Resort</a></h4>
+          <p class="hotel__price">210 000 FCFA<span> / nuit</span></p>
+          <div class="hotel__meta">
+            <span><i class="ri-star-smile-line"></i> 9,6 — 318 avis</span>
+            <span><i class="ri-sun-line"></i> Plage privée</span>
+            <span><i class="ri-sparkling-2-line"></i> Spa</span>
+          </div>
+          <div class="room__actions" style="margin-top: 1rem">
+            <a
+              href="reservation.html"
+              class="btn btn--sm"
+              data-reserver
+              data-hotel="Royal Assinie Beach Resort"
+              data-prix="210000"
+              >Réserver</a
+            >
+            <a href="hotel.html" class="btn btn--outline btn--sm">Voir la fiche</a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article
+          class="hotel__card"
+          data-ville="Grand-Bassam"
+          data-prix="95000"
+          data-etoiles="4"
+          data-note="9.2"
+          data-nom="Royal Bassam Héritage"
+        >
+          <div class="hotel__image">
+            <div class="hotel__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <span class="hotel__badge">UNESCO</span>
+            <img src="assets/hotel-3.jpg" alt="Royal Bassam Héritage" />
+          </div>
+          <p class="hotel__location">
+            <i class="ri-map-pin-line"></i> Grand-Bassam
+          </p>
+          <h4><a href="hotel.html">Royal Bassam Héritage</a></h4>
+          <p class="hotel__price">95 000 FCFA<span> / nuit</span></p>
+          <div class="hotel__meta">
+            <span><i class="ri-star-smile-line"></i> 9,2 — 187 avis</span>
+            <span><i class="ri-building-line"></i> Villa coloniale</span>
+            <span><i class="ri-goblet-line"></i> Bar de plage</span>
+          </div>
+          <div class="room__actions" style="margin-top: 1rem">
+            <a
+              href="reservation.html"
+              class="btn btn--sm"
+              data-reserver
+              data-hotel="Royal Bassam Héritage"
+              data-prix="95000"
+              >Réserver</a
+            >
+            <a href="hotel.html" class="btn btn--outline btn--sm">Voir la fiche</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article
+          class="hotel__card"
+          data-ville="Abidjan"
+          data-prix="145000"
+          data-etoiles="4"
+          data-note="9.1"
+          data-nom="Royal Lagune Cocody"
+        >
+          <div class="hotel__image">
+            <div class="hotel__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <span class="hotel__badge">Vue lagune</span>
+            <img src="assets/property-1.jpg" alt="Royal Lagune Cocody" />
+          </div>
+          <p class="hotel__location">
+            <i class="ri-map-pin-line"></i> Cocody, Abidjan
+          </p>
+          <h4><a href="hotel.html">Royal Lagune Cocody</a></h4>
+          <p class="hotel__price">145 000 FCFA<span> / nuit</span></p>
+          <div class="hotel__meta">
+            <span><i class="ri-star-smile-line"></i> 9,1 — 749 avis</span>
+            <span><i class="ri-water-flash-line"></i> Piscine panoramique</span>
+            <span><i class="ri-wifi-line"></i> Wi-Fi fibre</span>
+          </div>
+          <div class="room__actions" style="margin-top: 1rem">
+            <a
+              href="reservation.html"
+              class="btn btn--sm"
+              data-reserver
+              data-hotel="Royal Lagune Cocody"
+              data-prix="145000"
+              >Réserver</a
+            >
+            <a href="hotel.html" class="btn btn--outline btn--sm">Voir la fiche</a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article
+          class="hotel__card"
+          data-ville="Yamoussoukro"
+          data-prix="110000"
+          data-etoiles="4"
+          data-note="8.9"
+          data-nom="Royal Yamoussoukro Business"
+        >
+          <div class="hotel__image">
+            <div class="hotel__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <span class="hotel__badge">Affaires</span>
+            <img src="assets/property-4.jpg" alt="Royal Yamoussoukro Business" />
+          </div>
+          <p class="hotel__location">
+            <i class="ri-map-pin-line"></i> Yamoussoukro
+          </p>
+          <h4><a href="hotel.html">Royal Yamoussoukro Business</a></h4>
+          <p class="hotel__price">110 000 FCFA<span> / nuit</span></p>
+          <div class="hotel__meta">
+            <span><i class="ri-star-smile-line"></i> 8,9 — 126 avis</span>
+            <span><i class="ri-presentation-line"></i> 400 places</span>
+            <span><i class="ri-car-line"></i> Parking gratuit</span>
+          </div>
+          <div class="room__actions" style="margin-top: 1rem">
+            <a
+              href="reservation.html"
+              class="btn btn--sm"
+              data-reserver
+              data-hotel="Royal Yamoussoukro Business"
+              data-prix="110000"
+              >Réserver</a
+            >
+            <a href="hotel.html" class="btn btn--outline btn--sm">Voir la fiche</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article
+          class="hotel__card"
+          data-ville="San-Pédro"
+          data-prix="125000"
+          data-etoiles="4"
+          data-note="9.0"
+          data-nom="Royal San-Pédro Océan"
+        >
+          <div class="hotel__image">
+            <div class="hotel__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <span class="hotel__badge">Nouveau</span>
+            <img src="assets/trip-1.jpg" alt="Royal San-Pédro Océan" />
+          </div>
+          <p class="hotel__location">
+            <i class="ri-map-pin-line"></i> San-Pédro
+          </p>
+          <h4><a href="hotel.html">Royal San-Pédro Océan</a></h4>
+          <p class="hotel__price">125 000 FCFA<span> / nuit</span></p>
+          <div class="hotel__meta">
+            <span><i class="ri-star-smile-line"></i> 9,0 — 94 avis</span>
+            <span><i class="ri-sailboat-line"></i> Pêche au gros</span>
+            <span><i class="ri-leaf-line"></i> Éco-conçu</span>
+          </div>
+          <div class="room__actions" style="margin-top: 1rem">
+            <a
+              href="reservation.html"
+              class="btn btn--sm"
+              data-reserver
+              data-hotel="Royal San-Pédro Océan"
+              data-prix="125000"
+              >Réserver</a
+            >
+            <a href="hotel.html" class="btn btn--outline btn--sm">Voir la fiche</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty__state" id="hotels-empty" style="display: none">
+        <i class="ri-search-eye-line"></i>
+        <h4>Aucun établissement ne correspond</h4>
+        <p>
+          Essayez d'élargir votre budget ou de sélectionner une autre ville.
+        </p>
+      </div>
+    </section>
+
+    <!-- CARTE DES ADRESSES -->
+    <section class="section__container" style="padding-top: 0">
+      <span class="section__tag">Où nous trouver</span>
+      <h2 class="section__header">Nos adresses sur la carte</h2>
+      <p class="section__description section__subtitle" style="margin-bottom: 2.5rem">
+        De la lagune Ébrié à la côte de San-Pédro, nos établissements couvrent
+        les principales destinations du pays.
+      </p>
+      <div class="map">
+        <iframe
+          title="Carte de la Côte d'Ivoire"
+          loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-8.6000%2C4.3000%2C-2.5000%2C7.5000&amp;layer=mapnik&amp;marker=5.3200%2C-4.0200"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="section__container newsletter__container">
+        <div class="newsletter__content">
+          <h3>Restons en contact</h3>
+          <p>
+            Offres saisonnières, ouvertures et bonnes adresses en Côte d'Ivoire :
+            une lettre par mois, pas plus.
+          </p>
+        </div>
+        <form data-newsletter>
+          <input type="email" placeholder="Votre adresse e-mail" />
+          <button class="btn" type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo"
+            >Royal Hôtel<span>Côte d'Ivoire</span></a
+          >
+          <p>
+            Groupe hôtelier ivoirien fondé en 2011. Six établissements à Abidjan,
+            Assinie, Grand-Bassam, Yamoussoukro et San-Pédro, réunis autour d'une
+            même idée : recevoir comme on reçoit chez soi.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Découvrir</h4>
+          <ul class="footer__links">
+            <li><a href="hotels.html">Nos hôtels</a></li>
+            <li><a href="chambres.html">Chambres & suites</a></li>
+            <li><a href="services.html">Services & expériences</a></li>
+            <li><a href="blog.html">Le journal</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="a-propos.html">À propos du groupe</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Recrutement</a></li>
+            <li><a href="contact.html">Conditions générales</a></li>
+            <li><a href="contact.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nous joindre</h4>
+          <ul class="footer__contact">
+            <li>
+              <i class="ri-map-pin-line"></i>
+              <span>Boulevard Lagunaire, Cocody<br />Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li><i class="ri-phone-line"></i><span>+225 27 22 44 18 90</span></li>
+            <li><i class="ri-whatsapp-line"></i><span>+225 07 07 12 34 56</span></li>
+            <li><i class="ri-mail-line"></i><span>reservation@royalhotel.ci</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <p>© 2026 Royal Hôtel Côte d'Ivoire. Tous droits réservés.</p>
+        <p>
+          Conception & développement :
+          <a href="https://damiti-ouattara.vercel.app/" target="_blank" rel="noopener"
+            >Damiti Ouattara</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll__top" id="scroll-top" aria-label="Haut de page"
+      ><i class="ri-arrow-up-line"></i
+    ></a>
+    <a
+      href="https://wa.me/2250707123456"
+      class="whatsapp__btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Nous écrire sur WhatsApp"
+      ><i class="ri-whatsapp-line"></i
+    ></a>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

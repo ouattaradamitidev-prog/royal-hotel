@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Royal Hôtel — collection d'hôtels et resorts de luxe en Côte d'Ivoire : Abidjan, Assinie, Grand-Bassam, Yamoussoukro et San-Pédro. Réservez au meilleur tarif."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Royal Hôtel | Hôtels & resorts de luxe en Côte d'Ivoire</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+      <div class="nav__wrapper">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">Royal Hôtel<span>Côte d'Ivoire</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="hotels.html">Nos hôtels</a></li>
+          <li><a href="chambres.html">Chambres</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta__mobile">
+            <a href="reservation.html" class="btn btn--sm btn--block"
+              >Réserver un séjour</a
+            >
+          </li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:+2252722441890" class="nav__phone"
+            ><i class="ri-phone-line"></i> +225 27 22 44 18 90</a
+          >
+          <a href="reservation.html" class="btn btn--sm">Réserver</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HÉROS -->
+    <header>
+      <div class="section__container header__container" id="accueil">
+        <div class="header__content">
+          <span class="section__tag">Bienvenue en Côte d'Ivoire</span>
+          <h1>L'art de recevoir, <span>à l'ivoirienne</span></h1>
+          <p class="section__description">
+            Six adresses d'exception, de la lagune Ébrié aux plages d'Assinie.
+            Royal Hôtel réunit le confort des grandes maisons internationales et
+            la chaleur de l'hospitalité ivoirienne — l'akwaba, comme on dit ici.
+          </p>
+          <div class="header__btns">
+            <a href="hotels.html" class="btn btn--light">Découvrir nos hôtels</a>
+            <a href="reservation.html" class="btn btn--ghost"
+              >Réserver un séjour</a
+            >
+          </div>
+        </div>
+
+        <!-- Recherche de disponibilité -->
+        <form class="booking" data-recherche>
+          <div class="booking__grid">
+            <div class="booking__field">
+              <label for="destination"
+                ><i class="ri-map-pin-line"></i> Destination</label
+              >
+              <select id="destination" data-destination>
+                <option value="">Toutes nos adresses</option>
+                <option value="Abidjan">Abidjan</option>
+                <option value="Assinie">Assinie-Mafia</option>
+                <option value="Grand-Bassam">Grand-Bassam</option>
+                <option value="Yamoussoukro">Yamoussoukro</option>
+                <option value="San-Pédro">San-Pédro</option>
+              </select>
+            </div>
+            <div class="booking__field">
+              <label for="arrivee"
+                ><i class="ri-calendar-line"></i> Arrivée</label
+              >
+              <input type="date" id="arrivee" data-arrivee />
+            </div>
+            <div class="booking__field">
+              <label for="depart"
+                ><i class="ri-calendar-check-line"></i> Départ</label
+              >
+              <input type="date" id="depart" data-depart />
+            </div>
+            <div class="booking__field">
+              <label for="voyageurs"
+                ><i class="ri-user-line"></i> Voyageurs</label
+              >
+              <select id="voyageurs" data-voyageurs>
+                <option value="1">1 voyageur</option>
+                <option value="2" selected>2 voyageurs</option>
+                <option value="3">3 voyageurs</option>
+                <option value="4">4 voyageurs</option>
+                <option value="5">5 voyageurs</option>
+                <option value="6">6 voyageurs et plus</option>
+              </select>
+            </div>
+            <div class="booking__submit">
+              <button class="btn" type="submit">
+                <i class="ri-search-line"></i> Rechercher
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Chiffres de confiance -->
+        <div class="header__stats">
+          <div class="header__stat">
+            <h3>6</h3>
+            <p>Établissements</p>
+          </div>
+          <div class="header__stat">
+            <h3>240</h3>
+            <p>Chambres & suites</p>
+          </div>
+          <div class="header__stat">
+            <h3>9,2/10</h3>
+            <p>Note des voyageurs</p>
+          </div>
+          <div class="header__stat">
+            <h3>15 ans</h3>
+            <p>Au service de la CI</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#hotels" class="header__scroll" aria-label="Voir la suite"
+        ><i class="ri-arrow-down-line"></i
+      ></a>
+    </header>
+
+    <!-- NOS HÔTELS -->
+    <section class="hotel" id="hotels">
+      <div class="section__container hotel__container">
+        <span class="section__tag">Nos adresses</span>
+        <h2 class="section__header">Des hôtels partout en Côte d'Ivoire</h2>
+        <div class="hotel__grid">
+          <article class="hotel__card">
+            <div class="hotel__image">
+              <div class="hotel__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <span class="hotel__badge">Emblématique</span>
+              <img src="assets/hotel-1.jpg" alt="Royal Palace Plateau" />
+            </div>
+            <p class="hotel__location">
+              <i class="ri-map-pin-line"></i> Le Plateau, Abidjan
+            </p>
+            <h4><a href="hotel.html">Royal Palace Plateau</a></h4>
+            <p class="hotel__price">185 000 FCFA<span> / nuit</span></p>
+            <div class="hotel__meta">
+              <span><i class="ri-restaurant-line"></i> 2 restaurants</span>
+              <span><i class="ri-wifi-line"></i> Wi-Fi fibre</span>
+              <span><i class="ri-briefcase-line"></i> Séminaires</span>
+            </div>
+          </article>
+
+          <article class="hotel__card">
+            <div class="hotel__image">
+              <div class="hotel__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <span class="hotel__badge">Bord de mer</span>
+              <img src="assets/hotel-2.jpg" alt="Royal Assinie Beach Resort" />
+            </div>
+            <p class="hotel__location">
+              <i class="ri-map-pin-line"></i> Assinie-Mafia
+            </p>
+            <h4><a href="hotel.html">Royal Assinie Beach Resort</a></h4>
+            <p class="hotel__price">210 000 FCFA<span> / nuit</span></p>
+            <div class="hotel__meta">
+              <span><i class="ri-sun-line"></i> Plage privée</span>
+              <span><i class="ri-sparkling-2-line"></i> Spa</span>
+              <span><i class="ri-sailboat-line"></i> Sports nautiques</span>
+            </div>
+          </article>
+
+          <article class="hotel__card">
+            <div class="hotel__image">
+              <div class="hotel__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <span class="hotel__badge">UNESCO</span>
+              <img src="assets/hotel-3.jpg" alt="Royal Bassam Héritage" />
+            </div>
+            <p class="hotel__location">
+              <i class="ri-map-pin-line"></i> Grand-Bassam
+            </p>
+            <h4><a href="hotel.html">Royal Bassam Héritage</a></h4>
+            <p class="hotel__price">95 000 FCFA<span> / nuit</span></p>
+            <div class="hotel__meta">
+              <span><i class="ri-building-line"></i> Villa coloniale</span>
+              <span><i class="ri-goblet-line"></i> Bar de plage</span>
+              <span><i class="ri-bike-line"></i> Vélos offerts</span>
+            </div>
+          </article>
+        </div>
+        <div style="margin-top: 2.5rem; text-align: center">
+          <a href="hotels.html" class="btn btn--outline"
+            >Voir les six établissements</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- TROIS ÉTAPES -->
+    <section class="section__container steps__container">
+      <span class="section__tag">Simple et rapide</span>
+      <h2 class="section__header">Réservez en trois étapes</h2>
+      <div class="steps__grid">
+        <div class="steps__card">
+          <div class="steps__badge">
+            <i class="ri-map-pin-line"></i><span>1</span>
+          </div>
+          <h4>Choisissez votre adresse</h4>
+          <p class="section__description">
+            Parcourez nos six établissements, de la lagune Ébrié aux plages
+            d'Assinie, et trouvez celui qui correspond à votre séjour.
+          </p>
+        </div>
+        <div class="steps__card">
+          <div class="steps__badge">
+            <i class="ri-scales-3-line"></i><span>2</span>
+          </div>
+          <h4>Comparez en un coup d'œil</h4>
+          <p class="section__description">
+            Tarifs, équipements et emplacements sont affichés côte à côte : plus
+            besoin d'ouvrir dix onglets pour décider.
+          </p>
+        </div>
+        <div class="steps__card">
+          <div class="steps__badge">
+            <i class="ri-price-tag-3-line"></i><span>3</span>
+          </div>
+          <h4>Profitez du meilleur tarif</h4>
+          <p class="section__description">
+            Réservez en direct et bénéficiez de remises réservées à nos membres,
+            introuvables ailleurs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMBRES -->
+    <section class="section__container" id="chambres">
+      <span class="section__tag">Hébergement</span>
+      <h2 class="section__header">Chambres & suites</h2>
+      <p class="section__description section__subtitle">
+        Des chambres lagune aux villas les pieds dans le sable : chaque
+        catégorie a été pensée pour un usage précis.
+      </p>
+      <div class="rooms__grid">
+        <article class="room__card">
+          <div class="room__image">
+            <img src="assets/property-1.jpg" alt="Chambre Classique Lagune" />
+            <div class="room__price">85 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Chambre Classique Lagune</h4>
+            <p>
+              28 m² avec balcon ouvert sur la lagune Ébrié, lit queen size et
+              bureau. Idéale pour un séjour d'affaires à Abidjan.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 28 m²</span>
+              <span><i class="ri-user-line"></i> 2 personnes</span>
+              <span><i class="ri-hotel-bed-line"></i> Lit queen</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Chambre Classique Lagune"
+                data-prix="85000"
+                >Réserver</a
+              >
+              <a href="chambres.html" class="btn btn--outline btn--sm"
+                >Détails</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="room__card">
+          <div class="room__image">
+            <img src="assets/property-2.jpg" alt="Suite Junior Akwaba" />
+            <div class="room__price">165 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Suite Junior Akwaba</h4>
+            <p>
+              45 m² avec salon séparé, baignoire balnéo et décoration signée par
+              des artisans de Korhogo. Notre catégorie la plus demandée.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 45 m²</span>
+              <span><i class="ri-user-line"></i> 3 personnes</span>
+              <span><i class="ri-drop-line"></i> Balnéo</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Suite Junior Akwaba"
+                data-prix="165000"
+                >Réserver</a
+              >
+              <a href="chambres.html" class="btn btn--outline btn--sm"
+                >Détails</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="room__card">
+          <div class="room__image">
+            <img src="assets/property-3.jpg" alt="Villa Privée Assinie" />
+            <div class="room__price">340 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Villa Privée Assinie</h4>
+            <p>
+              110 m², deux chambres, terrasse et piscine privative à dix mètres
+              du sable. Petit-déjeuner servi en villa.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 110 m²</span>
+              <span><i class="ri-user-line"></i> 5 personnes</span>
+              <span><i class="ri-water-flash-line"></i> Piscine privée</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Villa Privée Assinie"
+                data-prix="340000"
+                >Réserver</a
+              >
+              <a href="chambres.html" class="btn btn--outline btn--sm"
+                >Détails</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="margin-top: 2.5rem; text-align: center">
+        <a href="chambres.html" class="btn btn--outline"
+          >Toutes les catégories</a
+        >
+      </div>
+    </section>
+
+    <!-- ESCAPADES INTERNATIONALES -->
+    <section class="inspiration">
+      <span class="section__tag">Programme fidélité</span>
+      <h2 class="section__header">Envie d'ailleurs ?</h2>
+      <p class="section__description">
+        Nos hôtels partenaires à travers le monde, accessibles avec vos points
+        Royal Club
+      </p>
+      <div class="inspiration__wrapper">
+        <div class="inspiration__card">
+          <img src="assets/inspiration-1.jpg" alt="Paris" />
+          <h4>Paris</h4>
+          <p>France</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/inspiration-2.jpg" alt="Rome" />
+          <h4>Rome</h4>
+          <p>Italie</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/inspiration-3.jpg" alt="Santorin" />
+          <h4>Santorin</h4>
+          <p>Grèce</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/inspiration-4.jpg" alt="Pékin" />
+          <h4>Pékin</h4>
+          <p>Chine</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/inspiration-5.jpg" alt="Londres" />
+          <h4>Londres</h4>
+          <p>Royaume-Uni</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/inspiration-6.jpg" alt="Tokyo" />
+          <h4>Tokyo</h4>
+          <p>Japon</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/trip-2.jpg" alt="Rio de Janeiro" />
+          <h4>Rio de Janeiro</h4>
+          <p>Brésil</p>
+        </div>
+        <div class="inspiration__card">
+          <img src="assets/trip-4.jpg" alt="Barcelone" />
+          <h4>Barcelone</h4>
+          <p>Espagne</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HÉBERGEMENTS D'EXCEPTION -->
+    <section class="property" id="property">
+      <div class="section__container property__container">
+        <span class="section__tag">Les préférées</span>
+        <h2 class="section__header">Nos hébergements les mieux notés</h2>
+        <p class="section__description">
+          Villas sur le sable, suites lagunaires et maisons coloniales : notre
+          sélection la plus applaudie
+        </p>
+        <div class="property__grid">
+          <article class="property__card">
+            <img src="assets/property-1.jpg" alt="Suite Ébène" />
+            <div class="property__card__content">
+              <h4>Suite Ébène</h4>
+              <p>Le Plateau, Abidjan</p>
+              <h5><span>9,4</span> 214 avis</h5>
+            </div>
+          </article>
+          <article class="property__card">
+            <img src="assets/property-2.jpg" alt="Villa Palmier" />
+            <div class="property__card__content">
+              <h4>Villa Palmier</h4>
+              <p>Assinie-Mafia</p>
+              <h5><span>9,6</span> 318 avis</h5>
+            </div>
+          </article>
+          <article class="property__card">
+            <img src="assets/property-3.jpg" alt="Chambre Deluxe Lagune" />
+            <div class="property__card__content">
+              <h4>Chambre Deluxe Lagune</h4>
+              <p>Cocody, Abidjan</p>
+              <h5><span>9,1</span> 749 avis</h5>
+            </div>
+          </article>
+          <article class="property__card">
+            <img src="assets/property-4.jpg" alt="Suite Présidentielle" />
+            <div class="property__card__content">
+              <h4>Suite Présidentielle</h4>
+              <p>Yamoussoukro</p>
+              <h5><span>9,8</span> 126 avis</h5>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section__container" id="services">
+      <span class="section__tag">Aux petits soins</span>
+      <h2 class="section__header">Nos services inclus</h2>
+      <p class="section__description section__subtitle">
+        Ce que vous trouverez dans chacun de nos établissements, sans surprise
+        sur la facture.
+      </p>
+      <div class="amenities__grid">
+        <div class="amenity__card">
+          <span><i class="ri-restaurant-2-line"></i></span>
+          <h4>Table ivoirienne</h4>
+          <p>
+            Kedjenou, poisson braisé, attiéké fin et carte internationale, sous
+            la direction de notre cheffe exécutive.
+          </p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-sparkling-2-line"></i></span>
+          <h4>Spa & bien-être</h4>
+          <p>
+            Soins au beurre de karité, hammam et massages traditionnels dans un
+            pavillon dédié.
+          </p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-water-flash-line"></i></span>
+          <h4>Piscines & plage</h4>
+          <p>
+            Bassins à débordement, transats, plages privées surveillées et club
+            enfants pendant les vacances.
+          </p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-briefcase-4-line"></i></span>
+          <h4>Séminaires</h4>
+          <p>
+            Salles modulables de 10 à 400 personnes, visioconférence et
+            restauration sur place.
+          </p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-plane-line"></i></span>
+          <h4>Navette aéroport</h4>
+          <p>
+            Accueil et transfert depuis l'aéroport Félix-Houphouët-Boigny,
+            24 heures sur 24.
+          </p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-compass-3-line"></i></span>
+          <h4>Excursions</h4>
+          <p>
+            Parc national du Banco, Grand-Bassam, îles Ehotilé : nos guides
+            organisent tout.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHIFFRES -->
+    <section class="stats">
+      <div class="section__container stats__grid">
+        <div class="stats__card">
+          <h3><span data-count="6">0</span></h3>
+          <p>Établissements</p>
+        </div>
+        <div class="stats__card">
+          <h3><span data-count="240">0</span></h3>
+          <p>Chambres & suites</p>
+        </div>
+        <div class="stats__card">
+          <h3><span data-count="48000" data-suffix="+">0</span></h3>
+          <p>Séjours par an</p>
+        </div>
+        <div class="stats__card">
+          <h3><span data-count="620">0</span></h3>
+          <p>Collaborateurs</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVIS -->
+    <section class="reviews">
+      <div class="section__container">
+        <span class="section__tag">Ils y étaient</span>
+        <h2 class="section__header">La parole à nos voyageurs</h2>
+        <div class="reviews__grid">
+          <div class="review__card">
+            <div class="review__stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i>
+            </div>
+            <p>
+              « Nous avons fêté nos dix ans de mariage à Assinie. La villa
+              donnait directement sur la plage et l'équipe avait préparé un dîner
+              surprise sur le sable. Rien à redire, tout était juste. »
+            </p>
+            <div class="review__author">
+              <div class="review__avatar">AK</div>
+              <div>
+                <h5>Aya Koffi</h5>
+                <span>Cocody, Abidjan — juin 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review__card">
+            <div class="review__stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-half-fill"></i>
+            </div>
+            <p>
+              « J'organise trois séminaires par an au Royal Palace Plateau. La
+              connexion tient la charge, la salle est bien insonorisée et la
+              pause-café arrive toujours à l'heure. Pour moi, c'est l'essentiel. »
+            </p>
+            <div class="review__author">
+              <div class="review__avatar">KN</div>
+              <div>
+                <h5>Kouamé N'Guessan</h5>
+                <span>Directeur RH — mai 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review__card">
+            <div class="review__stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i>
+            </div>
+            <p>
+              « Le Royal Bassam Héritage est une ancienne maison coloniale
+              magnifiquement restaurée. Le petit-déjeuner sur la véranda, face à
+              l'océan, valait à lui seul le déplacement depuis Abidjan. »
+            </p>
+            <div class="review__author">
+              <div class="review__avatar">FB</div>
+              <div>
+                <h5>Fatou Bamba</h5>
+                <span>Marcory, Abidjan — avril 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section__container trip__container" id="journal">
+      <span class="section__tag">Le journal</span>
+      <h2 class="section__header">Inspirations pour votre prochain séjour</h2>
+      <div class="trip__grid">
+        <article class="trip__card">
+          <div class="trip__image">
+            <img src="assets/trip-1.jpg" alt="article" />
+            <span class="trip__tag">Évasion</span>
+          </div>
+          <h4><a href="article.html">Assinie : le guide d'un week-end parfait</a></h4>
+          <p>12 mars 2026</p>
+        </article>
+        <article class="trip__card">
+          <div class="trip__image">
+            <img src="assets/trip-3.jpg" alt="article" />
+            <span class="trip__tag">Culture</span>
+          </div>
+          <h4>
+            <a href="article.html">Grand-Bassam, joyau du patrimoine mondial</a>
+          </h4>
+          <p>28 avril 2026</p>
+        </article>
+        <article class="trip__card">
+          <div class="trip__image">
+            <img src="assets/hotel-3.jpg" alt="article" />
+            <span class="trip__tag">Évasion</span>
+          </div>
+          <h4>
+            <a href="article.html">Les plus beaux couchers de soleil de la côte</a>
+          </h4>
+          <p>9 juin 2026</p>
+        </article>
+        <article class="trip__card">
+          <div class="trip__image">
+            <img src="assets/property-3.jpg" alt="article" />
+            <span class="trip__tag">Affaires</span>
+          </div>
+          <h4>
+            <a href="article.html">Organiser un séminaire à Yamoussoukro</a>
+          </h4>
+          <p>15 juillet 2026</p>
+        </article>
+      </div>
+      <div style="margin-top: 2.5rem; text-align: center">
+        <a href="blog.html" class="btn btn--outline">Tous les articles</a>
+      </div>
+    </section>
+
+    <!-- BANDEAU PROMOTIONNEL -->
+    <section class="discount">
+      <div class="section__container">
+        <div class="discount__container">
+          <div class="discount__content">
+            <h2 class="section__header">Jusqu'à 20 % de remise</h2>
+            <p class="section__description">
+              Rejoignez le Royal Club et profitez de tarifs membres, du surclassement
+              selon disponibilité et du départ tardif offert dans nos six adresses.
+            </p>
+          </div>
+          <div class="discount__btns">
+            <a href="contact.html" class="btn btn--ghost">Créer mon compte</a>
+            <a href="reservation.html" class="btn btn--light">Réserver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="section__container newsletter__container">
+        <div class="newsletter__content">
+          <h3>Restons en contact</h3>
+          <p>
+            Offres saisonnières, ouvertures et bonnes adresses en Côte d'Ivoire :
+            une lettre par mois, pas plus.
+          </p>
+        </div>
+        <form data-newsletter>
+          <input type="email" placeholder="Votre adresse e-mail" />
+          <button class="btn" type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo"
+            >Royal Hôtel<span>Côte d'Ivoire</span></a
+          >
+          <p>
+            Groupe hôtelier ivoirien fondé en 2011. Six établissements à Abidjan,
+            Assinie, Grand-Bassam, Yamoussoukro et San-Pédro, réunis autour d'une
+            même idée : recevoir comme on reçoit chez soi.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Découvrir</h4>
+          <ul class="footer__links">
+            <li><a href="hotels.html">Nos hôtels</a></li>
+            <li><a href="chambres.html">Chambres & suites</a></li>
+            <li><a href="services.html">Services & expériences</a></li>
+            <li><a href="blog.html">Le journal</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="a-propos.html">À propos du groupe</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Recrutement</a></li>
+            <li><a href="contact.html">Conditions générales</a></li>
+            <li><a href="contact.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nous joindre</h4>
+          <ul class="footer__contact">
+            <li>
+              <i class="ri-map-pin-line"></i>
+              <span>Boulevard Lagunaire, Cocody<br />Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li>
+              <i class="ri-phone-line"></i><span>+225 27 22 44 18 90</span>
+            </li>
+            <li>
+              <i class="ri-whatsapp-line"></i><span>+225 07 07 12 34 56</span>
+            </li>
+            <li>
+              <i class="ri-mail-line"></i><span>reservation@royalhotel.ci</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <p>© 2026 Royal Hôtel Côte d'Ivoire. Tous droits réservés.</p>
+        <p>
+          Conception & développement :
+          <a href="https://damiti-ouattara.vercel.app/" target="_blank" rel="noopener"
+            >Damiti Ouattara</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll__top" id="scroll-top" aria-label="Haut de page"
+      ><i class="ri-arrow-up-line"></i
+    ></a>
+    <a
+      href="https://wa.me/2250707123456"
+      class="whatsapp__btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Nous écrire sur WhatsApp"
+      ><i class="ri-whatsapp-line"></i
+    ></a>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

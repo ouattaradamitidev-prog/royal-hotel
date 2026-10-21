@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chambres, suites et villas Royal Hôtel : six catégories d'hébergement de 28 à 150 m², d'Abidjan à Assinie. Tarifs en FCFA, petit-déjeuner inclus."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chambres & suites | Royal Hôtel</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+      <div class="nav__wrapper">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">Royal Hôtel<span>Côte d'Ivoire</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="hotels.html">Nos hôtels</a></li>
+          <li><a href="chambres.html">Chambres</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta__mobile">
+            <a href="reservation.html" class="btn btn--sm btn--block"
+              >Réserver un séjour</a
+            >
+          </li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:+2252722441890" class="nav__phone"
+            ><i class="ri-phone-line"></i> +225 27 22 44 18 90</a
+          >
+          <a href="reservation.html" class="btn btn--sm">Réserver</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNIÈRE -->
+    <section class="page__banner">
+      <div class="section__container page__banner__container">
+        <h1>Chambres & suites</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span class="current">Chambres & suites</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÉGORIES -->
+    <section class="section__container">
+      <div class="filter__bar">
+        <div class="filter__grid">
+          <div class="filter__group">
+            <label for="filtre-type">Type d'hébergement</label>
+            <select id="filtre-type">
+              <option value="">Tous les types</option>
+              <option value="Chambre">Chambres</option>
+              <option value="Suite">Suites</option>
+              <option value="Villa">Villas</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label for="filtre-prix">Budget par nuit</label>
+            <select id="filtre-prix">
+              <option value="">Tous les tarifs</option>
+              <option value="100000">Jusqu'à 100 000 FCFA</option>
+              <option value="200000">Jusqu'à 200 000 FCFA</option>
+              <option value="350000">Jusqu'à 350 000 FCFA</option>
+              <option value="600000">Jusqu'à 600 000 FCFA</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label for="filtre-capacite">Voyageurs</label>
+            <select id="filtre-capacite">
+              <option value="">Peu importe</option>
+              <option value="2">2 personnes et plus</option>
+              <option value="3">3 personnes et plus</option>
+              <option value="4">4 personnes et plus</option>
+              <option value="5">5 personnes et plus</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label for="rooms-sort">Trier par</label>
+            <select id="rooms-sort">
+              <option value="">Recommandées</option>
+              <option value="prix-asc">Prix croissant</option>
+              <option value="prix-desc">Prix décroissant</option>
+              <option value="nom">Nom (A → Z)</option>
+            </select>
+          </div>
+          <div class="filter__group">
+            <label>&nbsp;</label>
+            <button class="btn btn--outline" type="button" id="rooms-reset">
+              Réinitialiser
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__result">
+        <p><strong id="rooms-count">6</strong> catégories disponibles</p>
+        <p>Petit-déjeuner buffet et Wi-Fi inclus dans tous nos tarifs</p>
+      </div>
+
+      <div class="rooms__grid" id="rooms-grid">
+        <!-- 1 -->
+        <article
+          class="room__card"
+          data-type="Chambre"
+          data-prix="85000"
+          data-capacite="2"
+          data-nom="Chambre Classique Lagune"
+        >
+          <div class="room__image">
+            <img src="assets/property-1.jpg" alt="Chambre Classique Lagune" />
+            <div class="room__price">85 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Chambre Classique Lagune</h4>
+            <p>
+              28 m² avec balcon ouvert sur la lagune Ébrié, lit queen size,
+              bureau et coin salon. Notre valeur sûre pour un séjour d'affaires à
+              Abidjan.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 28 m²</span>
+              <span><i class="ri-user-line"></i> 2 pers.</span>
+              <span><i class="ri-hotel-bed-line"></i> Lit queen</span>
+              <span><i class="ri-snowy-line"></i> Climatisation</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Chambre Classique Lagune"
+                data-prix="85000"
+                >Réserver</a
+              >
+              <a href="hotel.html" class="btn btn--outline btn--sm">L'hôtel</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article
+          class="room__card"
+          data-type="Chambre"
+          data-prix="120000"
+          data-capacite="2"
+          data-nom="Chambre Supérieure Vue Mer"
+        >
+          <div class="room__image">
+            <img src="assets/hotel-1.jpg" alt="Chambre Supérieure Vue Mer" />
+            <div class="room__price">120 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Chambre Supérieure Vue Mer</h4>
+            <p>
+              32 m² face à l'Atlantique, avec terrasse privative meublée et
+              douche à l'italienne. Disponible à Assinie, Bassam et San-Pédro.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 32 m²</span>
+              <span><i class="ri-user-line"></i> 2 pers.</span>
+              <span><i class="ri-sun-line"></i> Vue mer</span>
+              <span><i class="ri-home-4-line"></i> Terrasse</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Chambre Supérieure Vue Mer"
+                data-prix="120000"
+                >Réserver</a
+              >
+              <a href="hotel.html" class="btn btn--outline btn--sm">L'hôtel</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article
+          class="room__card"
+          data-type="Suite"
+          data-prix="165000"
+          data-capacite="3"
+          data-nom="Suite Junior Akwaba"
+        >
+          <div class="room__image">
+            <img src="assets/property-2.jpg" alt="Suite Junior Akwaba" />
+            <div class="room__price">165 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Suite Junior Akwaba</h4>
+            <p>
+              45 m² avec salon séparé, baignoire balnéo et tissus tissés à
+              Korhogo. Notre catégorie la plus demandée pour les séjours en
+              couple.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 45 m²</span>
+              <span><i class="ri-user-line"></i> 3 pers.</span>
+              <span><i class="ri-drop-line"></i> Balnéo</span>
+              <span><i class="ri-sofa-line"></i> Salon séparé</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Suite Junior Akwaba"
+                data-prix="165000"
+                >Réserver</a
+              >
+              <a href="hotel.html" class="btn btn--outline btn--sm">L'hôtel</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article
+          class="room__card"
+          data-type="Suite"
+          data-prix="210000"
+          data-capacite="3"
+          data-nom="Suite Exécutive Ébène"
+        >
+          <div class="room__image">
+            <img src="assets/property-3.jpg" alt="Suite Exécutive Ébène" />
+            <div class="room__price">210 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Suite Exécutive Ébène</h4>
+            <p>
+              60 m² au dernier étage, bureau fermé, accès au salon exécutif et
+              transfert aéroport inclus. Pensée pour les longs séjours d'affaires.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 60 m²</span>
+              <span><i class="ri-user-line"></i> 3 pers.</span>
+              <span><i class="ri-vip-crown-line"></i> Salon exécutif</span>
+              <span><i class="ri-plane-line"></i> Transfert inclus</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Suite Exécutive Ébène"
+                data-prix="210000"
+                >Réserver</a
+              >
+              <a href="hotel.html" class="btn btn--outline btn--sm">L'hôtel</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article
+          class="room__card"
+          data-type="Villa"
+          data-prix="340000"
+          data-capacite="5"
+          data-nom="Villa Privée Assinie"
+        >
+          <div class="room__image">
+            <img src="assets/hotel-2.jpg" alt="Villa Privée Assinie" />
+            <div class="room__price">340 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Villa Privée Assinie</h4>
+            <p>
+              110 m², deux chambres, cuisine équipée, terrasse et piscine
+              privative à dix mètres du sable. Petit-déjeuner servi en villa.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 110 m²</span>
+              <span><i class="ri-user-line"></i> 5 pers.</span>
+              <span><i class="ri-water-flash-line"></i> Piscine privée</span>
+              <span><i class="ri-restaurant-2-line"></i> Cuisine</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Villa Privée Assinie"
+                data-prix="340000"
+                >Réserver</a
+              >
+              <a href="hotel.html" class="btn btn--outline btn--sm">L'hôtel</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article
+          class="room__card"
+          data-type="Suite"
+          data-prix="520000"
+          data-capacite="4"
+          data-nom="Suite Présidentielle Royal"
+        >
+          <div class="room__image">
+            <img src="assets/property-4.jpg" alt="Suite Présidentielle Royal" />
+            <div class="room__price">520 000 FCFA<span> / nuit</span></div>
+          </div>
+          <div class="room__content">
+            <h4>Suite Présidentielle Royal</h4>
+            <p>
+              150 m² avec salle à manger pour huit convives, majordome dédié et
+              véhicule avec chauffeur. Une seule suite par établissement.
+            </p>
+            <div class="room__features">
+              <span><i class="ri-ruler-line"></i> 150 m²</span>
+              <span><i class="ri-user-line"></i> 4 pers.</span>
+              <span><i class="ri-service-line"></i> Majordome</span>
+              <span><i class="ri-car-line"></i> Chauffeur</span>
+            </div>
+            <div class="room__actions">
+              <a
+                href="reservation.html"
+                class="btn btn--sm"
+                data-reserver
+                data-chambre="Suite Présidentielle Royal"
+                data-prix="520000"
+                >Réserver</a
+              >
+              <a href="hotel.html" class="btn btn--outline btn--sm">L'hôtel</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty__state" id="rooms-empty" style="display: none">
+        <i class="ri-hotel-bed-line"></i>
+        <h4>Aucune catégorie ne correspond</h4>
+        <p>Modifiez votre budget ou le nombre de voyageurs pour voir plus d'options.</p>
+      </div>
+    </section>
+
+    <!-- INCLUS DANS TOUTES LES CHAMBRES -->
+    <section class="section__container" style="padding-top: 0">
+      <span class="section__tag">Toujours inclus</span>
+      <h2 class="section__header">Dans chacune de nos chambres</h2>
+      <div class="amenities__grid">
+        <div class="amenity__card">
+          <span><i class="ri-wifi-line"></i></span>
+          <h4>Wi-Fi fibre illimité</h4>
+          <p>Débit garanti pour la visioconférence, dans la chambre comme au bord de la piscine.</p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-cup-line"></i></span>
+          <h4>Petit-déjeuner buffet</h4>
+          <p>Formule ivoirienne et continentale servie de 6h à 10h30, incluse dans tous nos tarifs.</p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-snowy-line"></i></span>
+          <h4>Climatisation silencieuse</h4>
+          <p>Régulation individuelle et ventilateur de plafond dans chaque hébergement.</p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-safe-2-line"></i></span>
+          <h4>Coffre-fort</h4>
+          <p>Format ordinateur portable, à code personnel, dans le dressing.</p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-t-shirt-line"></i></span>
+          <h4>Blanchisserie</h4>
+          <p>Service en journée, repassage express en deux heures sur demande.</p>
+        </div>
+        <div class="amenity__card">
+          <span><i class="ri-service-line"></i></span>
+          <h4>Service en chambre 24/7</h4>
+          <p>Carte courte disponible à toute heure, y compris la nuit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANDEAU -->
+    <section class="discount">
+      <div class="section__container">
+        <div class="discount__container">
+          <div class="discount__content">
+            <h2 class="section__header">Séjour de 4 nuits ou plus</h2>
+            <p class="section__description">
+              La quatrième nuit vous est offerte dans nos établissements
+              balnéaires d'Assinie, Grand-Bassam et San-Pédro, hors vacances
+              scolaires.
+            </p>
+          </div>
+          <div class="discount__btns">
+            <a href="contact.html" class="btn btn--ghost">Poser une question</a>
+            <a href="reservation.html" class="btn btn--light">Réserver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="index.html" class="footer__logo"
+            >Royal Hôtel<span>Côte d'Ivoire</span></a
+          >
+          <p>
+            Groupe hôtelier ivoirien fondé en 2011. Six établissements à Abidjan,
+            Assinie, Grand-Bassam, Yamoussoukro et San-Pédro, réunis autour d'une
+            même idée : recevoir comme on reçoit chez soi.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Découvrir</h4>
+          <ul class="footer__links">
+            <li><a href="hotels.html">Nos hôtels</a></li>
+            <li><a href="chambres.html">Chambres & suites</a></li>
+            <li><a href="services.html">Services & expériences</a></li>
+            <li><a href="blog.html">Le journal</a></li>
+            <li><a href="reservation.html">Réserver</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="a-propos.html">À propos du groupe</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Recrutement</a></li>
+            <li><a href="contact.html">Conditions générales</a></li>
+            <li><a href="contact.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nous joindre</h4>
+          <ul class="footer__contact">
+            <li>
+              <i class="ri-map-pin-line"></i>
+              <span>Boulevard Lagunaire, Cocody<br />Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li><i class="ri-phone-line"></i><span>+225 27 22 44 18 90</span></li>
+            <li><i class="ri-whatsapp-line"></i><span>+225 07 07 12 34 56</span></li>
+            <li><i class="ri-mail-line"></i><span>reservation@royalhotel.ci</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <p>© 2026 Royal Hôtel Côte d'Ivoire. Tous droits réservés.</p>
+        <p>
+          Conception & développement :
+          <a href="https://damiti-ouattara.vercel.app/" target="_blank" rel="noopener"
+            >Damiti Ouattara</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll__top" id="scroll-top" aria-label="Haut de page"
+      ><i class="ri-arrow-up-line"></i
+    ></a>
+    <a
+      href="https://wa.me/2250707123456"
+      class="whatsapp__btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Nous écrire sur WhatsApp"
+      ><i class="ri-whatsapp-line"></i
+    ></a>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
